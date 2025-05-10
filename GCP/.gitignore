@@ -1,0 +1,29 @@
+# Local .terraform directories
+**/.terraform/*
+
+# Terraform variable files
+*.tfvars
+*.tfvars.json
+
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+
+# Crash logs
+crash.log
+*.tfplan
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# Sensitive files
+*.json
+*_override.tf
+*_override.tf.json
+
+
+# Ignore any .terraform.lock.hcl if you don’t want it in version control
+# Uncomment the next line if you want to ignore the lock file
+.terraform.lock.hcl
+**/.terraform.lock.hcl
