@@ -41,7 +41,7 @@ resource "google_compute_subnetwork" "london1" {
 }
 
 resource "google_compute_subnetwork" "london1-prod" {
-  name                     = "london1"
+  name                     = "london1-prod"
   ip_cidr_range            = "10.165.20.0/24"
   region                   = "europe-west2"
   network                  = google_compute_network.aperture-vpc-prod.id
