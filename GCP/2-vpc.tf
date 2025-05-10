@@ -21,3 +21,12 @@ resource "google_compute_network" "aperture-vpc" {
   #    google_project_service.container
   #  ]
 }
+
+
+resource "google_compute_network" "aperture-vpc-prod" {
+  name                            = "aperture-vpc-prod"
+  routing_mode                    = "REGIONAL"
+  auto_create_subnetworks         = false
+  mtu                             = 1460
+  delete_default_routes_on_create = false
+}
