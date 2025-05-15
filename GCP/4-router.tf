@@ -47,3 +47,14 @@ resource "google_compute_router" "aperture-router-paris-prod" {
   network = google_compute_network.aperture-vpc-prod.id
 }
 
+resource "google_compute_router" "aperture-router-ocasio" {
+  name    = "aperture-router-ocasio"
+  region  = "southamerica-east1"
+  network = google_compute_network.aperture-vpc.id
+}
+
+resource "google_compute_router" "aperture-router-ocasio-prod" {
+  name    = "aperture-router-ocasio-prod"
+  region  = "southamerica-east1"
+  network = google_compute_network.aperture-vpc-prod.id
+}
