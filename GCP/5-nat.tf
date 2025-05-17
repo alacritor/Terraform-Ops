@@ -98,7 +98,7 @@ resource "google_compute_router_nat" "aperture-nat-ocasio" {
   }
 
   nat_ips = [google_compute_address.aperture-nat-ocasio.self_link]
-}   
+}
 
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_address
 resource "google_compute_address" "aperture-nat-ocasio" {
