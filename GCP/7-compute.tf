@@ -21,4 +21,4 @@ resource "google_compute_instance" "aperture-instance" {
 
   metadata_startup_script = file("./startup.sh")
 
-}
+} 

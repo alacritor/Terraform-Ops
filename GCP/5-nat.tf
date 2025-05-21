@@ -93,7 +93,7 @@ resource "google_compute_router_nat" "aperture-nat-ocasio" {
   nat_ip_allocate_option             = "MANUAL_ONLY"
 
   subnetwork {
-    name                    = google_compute_subnetwork.osasco1.id
+    name                    = google_compute_subnetwork.ocasio1.id
     source_ip_ranges_to_nat = ["ALL_IP_RANGES"]
   }
 

@@ -60,12 +60,12 @@ resource "google_compute_subnetwork" "paris1-prod" {
   name                     = "paris1-prod"
   ip_cidr_range            = "10.165.30.0/24"
   region                   = "europe-west9"
-  network                  = google_compute_network.aperture-vpc.id
+  network                  = google_compute_network.aperture-vpc-prod.id
   private_ip_google_access = true
 }
 # For Sao Paulo
-resource "google_compute_subnetwork" "osasco1" {
-  name                     = "osasco1"
+resource "google_compute_subnetwork" "ocasio1" {
+  name                     = "ocasio1"
   ip_cidr_range            = "10.160.40.0/24"
   region                   = "southamerica-east1"
   network                  = google_compute_network.aperture-vpc.id
@@ -73,7 +73,7 @@ resource "google_compute_subnetwork" "osasco1" {
 }
 
 resource "google_compute_subnetwork" "osasco1-prod" {
-  name                     = "osasco1-prod"
+  name                     = "ocasio1-prod"
   ip_cidr_range            = "10.165.40.0/24"
   region                   = "southamerica-east1"
   network                  = google_compute_network.aperture-vpc-prod.id
