@@ -27,3 +27,6 @@ terraform.rc
 # Uncomment the next line if you want to ignore the lock file
 .terraform.lock.hcl
 **/.terraform.lock.hcl
+
+# SSL certificates
+*ssl.tf

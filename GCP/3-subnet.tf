@@ -8,6 +8,15 @@ resource "google_compute_subnetwork" "aperture-hq" {
   private_ip_google_access = true
 }
 
+resource "google_compute_subnetwork" "regional_proxy_subnet" {
+  name          = "regional-proxy-subnet"
+  region        = "us-west1"
+  ip_cidr_range = "10.0.0.0/24"
+  purpose       = "REGIONAL_MANAGED_PROXY"
+  network       = google_compute_network.aperture-vpc.id
+  role          = "ACTIVE"
+}
+
 resource "google_compute_subnetwork" "aperture-hq-prod" {
   name                     = "aperture-hq-prod"
   ip_cidr_range            = "10.165.110.0/24"
