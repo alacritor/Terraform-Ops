@@ -16,9 +16,10 @@ resource "google_compute_region_instance_template" "aperture-compute-template-hq
   # Network Configurations 
   network_interface {
     subnetwork = google_compute_subnetwork.aperture-hq-prod.id
-    /*access_config {
+    access_config {
       # Include this section to give the VM an external IP address
-    } */
+      nat_ip = google_compute_address.aperture-vm-ip.address
+    }
   }
 
   # Install Webserver using file() function

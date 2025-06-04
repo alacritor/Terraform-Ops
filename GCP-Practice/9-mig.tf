@@ -37,7 +37,11 @@
 #   }
 # }
 
-
+resource "google_compute_address" "aperture-vm-ip" {
+  name         = "aperture-vm-ip"
+  region       =  "us-west1"
+  address_type = "EXTERNAL"
+}
 
 resource "google_compute_region_instance_group_manager" "aperture-mig" {
   name     = "aperture-mig"

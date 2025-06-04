@@ -12,10 +12,10 @@
 #   value       = join(", ", data.google_compute_zones.available.names)
 # }
 
-# output "instance_external_ip" {
-#   value       = "http://${google_compute_instance.aperture-instance.network_interface[0].access_config[0].nat_ip}"
-#   description = "The external IP address of the GCE instance."
-# }
+output "instance_external_ip" {
+  value       = "http://${google_compute_address.aperture-vm-ip.address}"
+  description = "The external IP address of the GCE instance."
+}
 
 
 # output "instance_external_ips" {
