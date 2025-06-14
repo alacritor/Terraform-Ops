@@ -1,9 +1,9 @@
 # https://www.terraform.io/language/settings/backends/gcs
 terraform {
   backend "gcs" {
-    bucket      = "terraformstate-aperturesci"
+    bucket      = "terraformstate-aperturesci-alpha"
     prefix      = "terraform/state"
-    credentials = "euphoric-axon-453500-h6-cc9c54aaecf8.json"
+    credentials = "ivory-being-462318-m9-e77bb62751b0.json"
   }
   required_providers {
     google = {

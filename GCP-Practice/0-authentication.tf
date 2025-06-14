@@ -1,7 +1,7 @@
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs
 provider "google" {
-  project     = "euphoric-axon-453500-h6"
+  project     = "ivory-being-462318-m9"
   region      = "us-west1"
-  credentials = "euphoric-axon-453500-h6-cc9c54aaecf8.json"
+  credentials = "ivory-being-462318-m9-e77bb62751b0.json"
 }
 

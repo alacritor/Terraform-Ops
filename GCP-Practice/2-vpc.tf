@@ -29,5 +29,5 @@ resource "google_compute_network" "aperture-vpc-prod" {
   auto_create_subnetworks = false
   # mtu                             = 1460
   # delete_default_routes_on_create = false
-  project = "euphoric-axon-453500-h6"
+  project = "ivory-being-462318-m9"
 }
